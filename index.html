@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8" />
+  <head>
+    <title>Alla madda christmas party</title>
+  </head>
+  <style>
+    html {
+      font-family: "Arial Narrow", Arial, sans-serif;
+    }
+    body {
+      background: #f2edbd;
+    }
+
+    header {
+      height: 5vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    main {
+      height: 90vh;
+    }
+    footer {
+      height: 5vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-family: "Arial Narrow";
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .surprise {
+      display: none;
+      position: relative;
+    }
+
+    #santa-trigger {
+      cursor: pointer;
+    }
+
+    #youtube-player {
+      position: fixed;
+      top: -9999px;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+  <body>
+    <header>
+      <marquee>
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp;</marquee
+      >
+    </header>
+    <main>
+      <div>
+        <img src="santa.gif" id="santa-trigger" title="Save me!" />
+        <div class="surprise" id="surprise-box">
+          <img src="surprise.gif" title="thanks daddy!" />
+        </div>
+        <h1>Siete invitati alla cena di casa madda!</h1>
+        <p>
+          data a decidersi&rarr;partecipa al sondaggio <br />
+          <a href="https://maps.app.goo.gl/Dmt6uUTnCQvobiiz7" target="_blank"
+            >ci trovi qui</a
+          >
+        </p>
+        <p>MENU <br />(in aggiornamento)</p>
+        <ul>
+          <li>antipastini misti</li>
+          <li>Folpetti al sugo su polenta/ Funghi al sugo su polenta</li>
+          <li>Torta salata all'erbette</li>
+          <li>Insalata di finocchi, arance, uvetta, olio al basilico</li>
+          <li>Tiramisù</li>
+          <li>Panettone</li>
+          <li>Un dolce da un volontario</li>
+          <li>Vino a piacere</li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <marquee direction="right">
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        Siete Invitati&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp;</marquee
+      >
+    </footer>
+
+    <!-- Player YouTube nascosto -->
+    <div id="youtube-player"></div>
+
+    <!-- API YouTube -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <script>
+      // Santa animation
+      const santa = document.getElementById("santa-trigger");
+      const surpriseDiv = document.getElementById("surprise-box");
+      santa.addEventListener("click", function () {
+        if (surpriseDiv.style.display === "flex") {
+          surpriseDiv.style.display = "none";
+        } else {
+          surpriseDiv.style.display = "flex";
+        }
+      });
+
+      // YouTube Player
+      let player;
+
+      // Lista dei video ID di YouTube
+      const playlist = [
+        "7WRNpalBzhA", // WU-TANG
+        "45ZFjiABLwI", // TRIBE CALLED QUEST
+        "EwzBjBHfDIs", // MFDOOM
+      ];
+
+      // Callback quando l'API è pronta
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player("youtube-player", {
+          height: "1",
+          width: "1",
+          videoId: playlist[0],
+          playerVars: {
+            autoplay: 1,
+            controls: 0,
+            loop: 1,
+            playlist: playlist.join(","),
+            playsinline: 1,
+            origin: window.location.origin,
+          },
+          events: {
+            onReady: onPlayerReady,
+            onStateChange: onPlayerStateChange,
+          },
+        });
+      }
+
+      function onPlayerReady(event) {
+        // Player pronto - l'autoplay partirà automaticamente
+        console.log("YouTube player ready!");
+      }
+
+      function onPlayerStateChange(event) {
+        // Log dello stato per debugging
+        console.log("Player state:", event.data);
+      }
+    </script>
+  </body>
+</html>
