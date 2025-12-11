@@ -6,6 +6,11 @@
     <title>Alla madda christmas party</title>
   </head>
   <style>
+    @font-face {
+      font-family: "Arial Narrow";
+      src: url(ArialNarrow.woff2);
+    }
+
     html {
       font-family: "Arial Narrow", Arial, sans-serif;
     }
@@ -109,13 +114,23 @@
     </header>
     <main>
       <div>
-        <img src="santa.gif" id="santa-trigger" title="Save me!" />
+        <img
+          src="santa.gif"
+          id="santa-trigger"
+          title="Click on santa to play music!"
+        />
         <div class="surprise" id="surprise-box">
           <img src="surprise.gif" title="thanks daddy!" />
         </div>
         <h1>Siete invitati alla cena di casa madda!</h1>
         <p>
-          data a decidersi&rarr;partecipa al sondaggio <br />
+          <a
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=cena%20alla%20madda&dates=20251218T193000/20251219T010000&location=Milano%20Bovisa"
+            target="_blank"
+          >
+            20 Dicembre 2025
+          </a>
+          <br />
           <a href="https://maps.app.goo.gl/Dmt6uUTnCQvobiiz7" target="_blank"
             >ci trovi qui</a
           >
@@ -128,7 +143,7 @@
           <li>Insalata di finocchi, arance, uvetta, olio al basilico</li>
           <li>Tiramisù</li>
           <li>Panettone</li>
-          <li>Un dolce da un volontario</li>
+          <li>Strudel di mele</li>
           <li>Vino a piacere</li>
         </ul>
       </div>
@@ -170,11 +185,17 @@
       // Santa animation
       const santa = document.getElementById("santa-trigger");
       const surpriseDiv = document.getElementById("surprise-box");
+
       santa.addEventListener("click", function () {
         if (surpriseDiv.style.display === "flex") {
           surpriseDiv.style.display = "none";
         } else {
           surpriseDiv.style.display = "flex";
+        }
+
+        // Start the YouTube player when button is clicked
+        if (player && player.playVideo) {
+          player.playVideo();
         }
       });
 
@@ -195,7 +216,7 @@
           width: "1",
           videoId: playlist[0],
           playerVars: {
-            autoplay: 1,
+            autoplay: 0, // Changed from 1 to 0
             controls: 0,
             loop: 1,
             playlist: playlist.join(","),
@@ -210,12 +231,10 @@
       }
 
       function onPlayerReady(event) {
-        // Player pronto - l'autoplay partirà automaticamente
         console.log("YouTube player ready!");
       }
 
       function onPlayerStateChange(event) {
-        // Log dello stato per debugging
         console.log("Player state:", event.data);
       }
     </script>
